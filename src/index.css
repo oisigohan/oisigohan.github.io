@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'DM Sans', 'IBM Plex Sans JP', sans-serif;
+}
+
+/* yet-another-react-lightbox: semi-transparent backdrop */
+.yarl__root {
+  --yarl__color_backdrop: rgba(0, 0, 0, 0.75);
+}

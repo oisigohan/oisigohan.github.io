@@ -1,0 +1,12 @@
+{
+  "siteName": "NABESHIMA",
+  "siteUrl": "https://nabeshima.works",
+  "description": "CG artist portfolio — 3D animation, motion graphics, and visual effects.",
+  "ogImage": "/og-image.png",
+  "name": "Haruka Nabeshima",
+  "bio": "3DCG Designer",
+  "avatarUrl": "",
+  "links": [
+    { "label": "Email", "url": "mailto:nabeshima.works@gmail.com", "icon": "faEnvelope" }
+  ]
+}

@@ -1,0 +1,231 @@
+﻿[
+  {
+    "id": "lighting-practice-2026",
+    "title": "Lighting Practice 2026",
+    "thumbnail": "2026-01.png",
+    "description": "",
+    "year": 2026,
+    "category": "Personal Works",
+    "tags": [
+      "CINEMA 4D",
+      "Redshift"
+    ],
+    "images": [
+      "2026-01.png"
+    ],
+    "vimeoId": null
+  },
+  {
+    "id": "button",
+    "title": "button",
+    "thumbnail": "01.png",
+    "description": "",
+    "year": 2025,
+    "category": "Personal Works",
+    "tags": [
+      "CINEMA 4D",
+      "Redshift"
+    ],
+    "images": [
+      "01.png",
+      "02.png",
+      "03.png"
+    ],
+    "vimeoId": null
+  },
+  {
+    "id": "park",
+    "title": "park",
+    "thumbnail": "01.png",
+    "description": "",
+    "year": 2025,
+    "category": "Personal Works",
+    "tags": [
+      "CINEMA 4D",
+      "Redshift"
+    ],
+    "images": [
+      "01.png"
+    ],
+    "vimeoId": [
+      "1124240511"
+    ]
+  },
+  {
+    "id": "earth",
+    "title": "earth",
+    "thumbnail": "01.png",
+    "description": "",
+    "year": 2025,
+    "category": "Personal Works",
+    "tags": [
+      "CINEMA 4D",
+      "Redshift"
+    ],
+    "images": [
+      "01.png"
+    ],
+    "vimeoId": [
+      "1121249716"
+    ]
+  },
+  {
+    "id": "lighting-practice-2025",
+    "title": "Lighting Practice 2025",
+    "thumbnail": "02.png",
+    "description": "",
+    "year": 2025,
+    "category": "Personal Works",
+    "tags": [
+      "CINEMA 4D",
+      "Redshift"
+    ],
+    "images": [
+      "01.png",
+      "02.png",
+      "03.png",
+      "04.png",
+      "05.png",
+      "06.png"
+    ],
+    "vimeoId": null
+  },
+  {
+    "id": "seek",
+    "title": "seek",
+    "thumbnail": "01.png",
+    "description": "",
+    "year": 2025,
+    "category": "Personal Works",
+    "tags": [
+      "CINEMA 4D",
+      "Redshift"
+    ],
+    "images": [
+      "01.png",
+      "02.png"
+    ],
+    "vimeoId": [
+      "1070605532/19773041b9"
+    ]
+  },
+  {
+    "id": "cookie",
+    "title": "cookie",
+    "thumbnail": "02.png",
+    "description": "手付けモーションとシミュレーションの両方を試行してみた作品です。",
+    "year": 2025,
+    "category": "Personal Works",
+    "tags": [
+      "CINEMA 4D",
+      "Redshift"
+    ],
+    "images": [
+      "01.png",
+      "02.png"
+    ],
+    "vimeoId": [
+      "1077111961/cad79a9a1d",
+      "1070802922/c7c391ef57"
+    ]
+  },
+  {
+    "id": "delay",
+    "title": "delay",
+    "thumbnail": "01.png",
+    "description": "",
+    "year": 2025,
+    "category": "Personal Works",
+    "tags": [
+      "CINEMA 4D",
+      "Redshift"
+    ],
+    "images": [
+      "01.png",
+      "02.png",
+      "03.png",
+      "04.png",
+      "05.png",
+      "06.png",
+      "07.png",
+      "08.png",
+      "09.png",
+      "10.png",
+      "11.png",
+      "12.png"
+    ],
+    "vimeoId": [
+      "1060501000/04f0f86a69"
+    ]
+  },
+  {
+    "id": "signal",
+    "title": "signal",
+    "thumbnail": "01.png",
+    "description": "",
+    "year": 2025,
+    "category": "Personal Works",
+    "tags": [
+      "CINEMA 4D",
+      "Redshift"
+    ],
+    "images": [
+      "01.png",
+      "02.png",
+      "03.png"
+    ],
+    "vimeoId": [
+      "1059302917/56d54e03d2"
+    ]
+  },
+  {
+    "id": "ribbon",
+    "title": "ribbon",
+    "thumbnail": "01.png",
+    "description": "",
+    "year": 2025,
+    "category": "Personal Works",
+    "tags": [
+      "CINEMA 4D",
+      "Redshift"
+    ],
+    "images": [
+      "01.png",
+      "02.png"
+    ],
+    "vimeoId": [
+      "1059303660/3abf070187"
+    ]
+  },
+  {
+    "id": "tree",
+    "title": "tree",
+    "thumbnail": "01.png",
+    "description": "",
+    "year": 2025,
+    "category": "Personal Works",
+    "tags": [
+      "CINEMA 4D",
+      "Redshift"
+    ],
+    "images": [
+      "01.png"
+    ],
+    "vimeoId": [
+      "1059303681/7e64d24c61"
+    ]
+  },
+  {
+    "id": "external-example",
+    "title": "Example External Work",
+    "thumbnail": "01.png",
+    "link": "https://example.com",
+    "year": 2025,
+    "category": "Professional Work",
+    "tags": [
+      "CINEMA 4D",
+      "Redshift"
+    ],
+    "hidden": true
+  }
+]
