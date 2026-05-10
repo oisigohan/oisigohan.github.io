@@ -2,7 +2,7 @@
   {
     "id": "lighting-practice-2026",
     "title": "Lighting Practice 2026",
-    "thumbnail": "2026-01.png",
+    "thumbnail": "2026_02.png",
     "description": "",
     "year": 2026,
     "category": "Personal Works",
@@ -11,7 +11,7 @@
       "Redshift"
     ],
     "images": [
-      "2026-01.png"
+      "2026_01.png","2026_02.png"
     ],
     "vimeoId": null
   },
