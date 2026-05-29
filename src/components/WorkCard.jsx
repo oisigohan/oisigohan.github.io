@@ -9,14 +9,16 @@ export default function WorkCard({ work }) {
 
   const inner = (
     <>
-      <div className="aspect-[4/3] overflow-hidden bg-neutral-100">
-        <img
-          src={imgSrc}
-          alt={title}
-          className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-          loading="lazy"
-        />
-      </div>
+      {thumbnail && (
+        <div className="aspect-[4/3] overflow-hidden bg-neutral-100">  
+            <img
+              src={imgSrc}
+              alt={title}
+              className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+              loading="lazy"
+            />
+        </div>
+      )}
       <div className="pt-4 pb-2">
         <div className="flex items-baseline justify-between gap-2">
           <h2 className="text-base font-medium text-neutral-900 group-hover:text-neutral-500 transition-colors duration-200 flex items-center gap-1.5">

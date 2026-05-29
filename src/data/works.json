@@ -216,16 +216,21 @@
     ]
   },
   {
-    "id": "external-example",
-    "title": "Example External Work",
-    "thumbnail": "01.png",
-    "link": "https://example.com",
-    "year": 2025,
+    "id": "nike-3dooh-01",
+    "title": "Nike 3DOOH for Shinjukushop OPEN",
+    "thumbnail": null,
+    "link": "https://2eichi.com/nike-3d-ooh-for-shinjukuopen",
+    "year": 2026,
     "category": "Professional Work",
-    "tags": [
-      "CINEMA 4D",
-      "Redshift"
-    ],
-    "hidden": true
+    "hidden": false
+  },
+   {
+    "id": "nike-3dooh-01",
+    "title": "NIKE - 3D OOH for PEGASUS42",
+    "thumbnail": null,
+    "link": "https://2eichi.com/nike-3d-ooh-for-nike-peg",
+    "year": 2026,
+    "category": "Professional Work",
+    "hidden": false
   }
 ]
