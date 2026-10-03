@@ -1,23 +1,56 @@
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
+function WorkThumbnail({ title, vimeoId, imageSrc }) {
+  const [vimeoThumbnail, setVimeoThumbnail] = useState(null)
+
+  useEffect(() => {
+    if (!vimeoId) return
+
+    const controller = new AbortController()
+    const videoUrl = `https://vimeo.com/${vimeoId}`
+    const endpoint = `https://vimeo.com/api/oembed.json?url=${encodeURIComponent(videoUrl)}`
+
+    fetch(endpoint, { signal: controller.signal })
+      .then((response) => (response.ok ? response.json() : null))
+      .then((data) => {
+        if (data?.thumbnail_url) setVimeoThumbnail(data.thumbnail_url)
+      })
+      .catch(() => null)
+
+    return () => controller.abort()
+  }, [vimeoId])
+
+  return (
+    <div className="aspect-[4/3] overflow-hidden bg-neutral-100">
+      {(vimeoThumbnail || imageSrc) && (
+        <img
+          src={vimeoThumbnail || imageSrc}
+          alt={title}
+          className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+          loading="lazy"
+        />
+      )}
+    </div>
+  )
+}
+
 export default function WorkCard({ work }) {
   const { id, link, title, year, tags, thumbnail } = work
+  const vimeoId = Array.isArray(work.vimeoId) ? work.vimeoId[0] : work.vimeoId
   const folder = id
-  const imgSrc = `/works/${folder}/${thumbnail}`
+  const imgSrc = thumbnail ? `/works/${folder}/${thumbnail}` : null
 
   const inner = (
     <>
-      {thumbnail && (
-        <div className="aspect-[4/3] overflow-hidden bg-neutral-100">  
-            <img
-              src={imgSrc}
-              alt={title}
-              className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-              loading="lazy"
-            />
-        </div>
+      {(thumbnail || vimeoId) && (
+        <WorkThumbnail
+          title={title}
+          vimeoId={vimeoId}
+          imageSrc={imgSrc}
+        />
       )}
       <div className="pt-4 pb-2">
         <div className="flex items-baseline justify-between gap-2">
