@@ -3,11 +3,15 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
-function WorkThumbnail({ title, vimeoId, imageSrc }) {
+function WorkThumbnail({ title, vimeoId, youtubeId, imageSrc }) {
   const [vimeoThumbnail, setVimeoThumbnail] = useState(null)
+  const youtubeThumbnail =
+    youtubeId
+      ? `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`
+      : null
 
   useEffect(() => {
-    if (!vimeoId) return
+    if (!vimeoId) return undefined
 
     const controller = new AbortController()
     const videoUrl = `https://vimeo.com/${vimeoId}`
@@ -23,11 +27,13 @@ function WorkThumbnail({ title, vimeoId, imageSrc }) {
     return () => controller.abort()
   }, [vimeoId])
 
+  const thumbnailSrc = vimeoThumbnail || youtubeThumbnail || imageSrc
+
   return (
     <div className="aspect-[4/3] overflow-hidden bg-neutral-100">
-      {(vimeoThumbnail || imageSrc) && (
+      {thumbnailSrc && (
         <img
-          src={vimeoThumbnail || imageSrc}
+          src={thumbnailSrc}
           alt={title}
           className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
           loading="lazy"
@@ -40,15 +46,17 @@ function WorkThumbnail({ title, vimeoId, imageSrc }) {
 export default function WorkCard({ work }) {
   const { id, link, title, year, tags, thumbnail } = work
   const vimeoId = Array.isArray(work.vimeoId) ? work.vimeoId[0] : work.vimeoId
+  const youtubeId = Array.isArray(work.youtubeId) ? work.youtubeId[0] : work.youtubeId
   const folder = id
   const imgSrc = thumbnail ? `/works/${folder}/${thumbnail}` : null
 
   const inner = (
     <>
-      {(thumbnail || vimeoId) && (
+      {(thumbnail || vimeoId || youtubeId) && (
         <WorkThumbnail
           title={title}
           vimeoId={vimeoId}
+          youtubeId={youtubeId}
           imageSrc={imgSrc}
         />
       )}

@@ -6,7 +6,7 @@
     "link": "https://2eichi.com/nike-3d-ooh-for-shinjukuopen",
     "vimeoId": ["1192147098"],
     "year": 2026,
-    "category": "Professional Works",
+    "category": "Works",
     "hidden": false
   },
    {
@@ -16,7 +16,7 @@
     "link": "https://2eichi.com/nike-3d-ooh-for-nike-peg",
     "vimeoId": ["1192125933"],
     "year": 2026,
-    "category": "Professional Works",
+    "category": "Works",
     "hidden": false
   },
     {
@@ -26,7 +26,7 @@
     "link": "https://2eichi.com/foodnia",
     "vimeoId": ["1225513232"],
     "year": 2026,
-    "category": "Professional Works",
+    "category": "Works",
     "hidden": false
   },
   {
@@ -35,7 +35,25 @@
     "thumbnail": null,
     "link": "https://x.com/flapper3_inc/status/2094381506923729057",
     "year": 2026,
-    "category": "Professional Works",
+    "category": "Works",
+    "hidden": false
+  },
+  {
+    "id": "Roomba",
+    "title": "Roomba friends",
+    "link": "https://2eichi.com/foodnia-1",
+    "youtubeId": ["2WQhfcyPbYI"],
+    "year": 2026,
+    "category": "Works",
+    "hidden": false
+  },
+  {
+    "id": "kaonabi",
+    "title": "Kaonavi KTi サービス紹介映像",
+    "link": "https://2eichi.com/kaonavi",
+    "vimeoId": ["1241124523"],
+    "year": 2026,
+    "category": "Works",
     "hidden": false
   },
   {
